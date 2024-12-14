@@ -1,0 +1,17 @@
+<mat-toolbar color="blue">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <mat-menu #menu="matMenu">
+        <a mat-menu-item href="/login">
+            <mat-icon>login</mat-icon>
+            <span>เข้าสู่ระบบ</span>
+        </a>
+        <a mat-menu-item href="/register">
+            <mat-icon>app_registration</mat-icon>
+            <span>สมัครสมาชิก</span>
+        </a>
+    </mat-menu>
+</mat-toolbar>
+
